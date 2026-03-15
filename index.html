@@ -1,0 +1,1779 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>Panduan Umroh Mandiri - Raih Umroh Impian Tanpa Ribet</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#FFF9E6',
+                            100: '#FFF0B3',
+                            200: '#FFE680',
+                            300: '#FFD94D',
+                            400: '#D4AF37',
+                            500: '#B8860B',
+                            600: '#9A7209',
+                            700: '#7C5A07',
+                            800: '#5E4205',
+                            900: '#402A03'
+                        },
+                        cream: {
+                            50: '#FEFDFB',
+                            100: '#FAF7F0',
+                            200: '#F5EFE0',
+                            300: '#EDE4D0'
+                        }
+                    },
+                    fontFamily: {
+                        display: ['Cormorant Garamond', 'serif'],
+                        body: ['DM Sans', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            overflow-x: hidden;
+            font-family: 'DM Sans', sans-serif;
+            background-color: #FEFDFB;
+            color: #2D2A26;
+            min-height: 100vh;
+            width: 100%;
+            max-width: 100vw;
+        }
+
+        .font-display {
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        /* Scroll Reveal Animation */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Stagger children */
+        .reveal-stagger>* {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .reveal-stagger.active>*:nth-child(1) {
+            transition-delay: 0.1s;
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .reveal-stagger.active>*:nth-child(2) {
+            transition-delay: 0.2s;
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .reveal-stagger.active>*:nth-child(3) {
+            transition-delay: 0.3s;
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .reveal-stagger.active>*:nth-child(4) {
+            transition-delay: 0.4s;
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .reveal-stagger.active>*:nth-child(5) {
+            transition-delay: 0.5s;
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .reveal-stagger.active>*:nth-child(6) {
+            transition-delay: 0.6s;
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Gradient text */
+        .text-gradient {
+            background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #B8860B 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* Subtle pattern background */
+        .pattern-bg {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23D4AF37' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+
+        /* Button styling */
+        .btn-primary {
+            background: linear-gradient(135deg, #B8860B 0%, #D4AF37 100%);
+            color: #FFFFFF !important;
+            text-decoration: none !important;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(184, 134, 11, 0.3);
+            color: #FFFFFF !important;
+            text-decoration: none !important;
+        }
+
+        .btn-primary:active {
+            transform: translateY(0);
+            color: #FFFFFF !important;
+            text-decoration: none !important;
+        }
+
+        /* Gold border accent */
+        .gold-border {
+            border: 1px solid rgba(212, 175, 55, 0.3);
+        }
+
+        /* Floating elements animation */
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .float-animation {
+            animation: float 4s ease-in-out infinite;
+        }
+
+        /* Glow effect */
+        .gold-glow {
+            box-shadow: 0 0 40px rgba(212, 175, 55, 0.15);
+        }
+
+        /* Counter animation */
+        @keyframes pulse-subtle {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.7;
+            }
+        }
+
+        .pulse-subtle {
+            animation: pulse-subtle 2s ease-in-out infinite;
+        }
+
+        /* Testimonial card hover */
+        .testimonial-card {
+            transition: all 0.3s ease;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+        }
+
+        /* FAQ accordion */
+        .faq-item {
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, padding 0.4s ease;
+        }
+
+        .faq-answer.open {
+            max-height: 500px;
+        }
+
+        /* Reduced motion */
+        @media (prefers-reduced-motion: reduce) {
+
+            .reveal,
+            .reveal-stagger>*,
+            .float-animation,
+            .pulse-subtle {
+                animation: none;
+                transition: none;
+                opacity: 1;
+                transform: none;
+            }
+
+            html {
+                scroll-behavior: auto;
+            }
+        }
+
+        /* Focus states */
+        button:focus-visible,
+        a:focus-visible {
+            outline: 2px solid #B8860B;
+            outline-offset: 2px;
+        }
+
+        /* ===== HERO SLIDER ===== */
+        .hero-slider,
+        .testi-slider {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 125%;
+            /* 1350 / 1080 = 1.25 */
+            overflow: hidden;
+            border-radius: 1rem;
+        }
+
+        .slider-track {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            transition: transform 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
+            will-change: transform;
+        }
+
+        .slider-track .slide {
+            flex: 0 0 100%;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .slider-track .slide img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: contain;
+            margin: 0 auto;
+        }
+
+        /* Arrow Buttons */
+        .slider-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 10;
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            border: none;
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            color: #5E4205;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+            transition: all 0.3s ease;
+            opacity: 0;
+        }
+
+        .hero-slider:hover .slider-btn,
+        .testi-slider:hover .slider-btn {
+            opacity: 1;
+        }
+
+        @media (max-width: 768px) {
+            .slider-btn {
+                opacity: 1;
+                width: 36px;
+                height: 36px;
+            }
+        }
+
+        .slider-btn:hover {
+            background: rgba(255, 255, 255, 1);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18);
+            transform: translateY(-50%) scale(1.08);
+        }
+
+        .slider-btn:active {
+            transform: translateY(-50%) scale(0.96);
+        }
+
+        .slider-btn.prev {
+            left: 12px;
+        }
+
+        .slider-btn.next {
+            right: 12px;
+        }
+
+        /* Dot Indicators */
+        .slider-dots {
+            position: absolute;
+            bottom: 14px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 8px;
+            z-index: 10;
+        }
+
+        .slider-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            border: 2px solid rgba(255, 255, 255, 0.8);
+            background: transparent;
+            cursor: pointer;
+            padding: 0;
+            transition: all 0.3s ease;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+        }
+
+        .slider-dot.active {
+            background: #D4AF37;
+            border-color: #D4AF37;
+            transform: scale(1.2);
+        }
+
+        .slider-dot:hover:not(.active) {
+            background: rgba(255, 255, 255, 0.5);
+        }
+
+        /* Progress bar */
+        .slider-progress {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #B8860B, #D4AF37);
+            z-index: 10;
+            transition: width 0.3s ease;
+        }
+
+        /* Container fix */
+        .container-fix {
+            width: 100%;
+            max-width: 100%;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @media (min-width: 640px) {
+            .container-fix {
+                padding-left: 1.5rem;
+                padding-right: 1.5rem;
+            }
+        }
+
+        /* Image responsive fix */
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Prevent text overflow */
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        span,
+        li {
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+    </style>
+</head>
+
+<body class="pattern-bg">
+    <!-- Main Container -->
+    <main class="w-full max-w-full overflow-x-hidden">
+
+        <!-- HERO SECTION -->
+        <section class="w-full py-8 sm:py-12 md:py-16 lg:py-20 px-4">
+            <div class="max-w-2xl mx-auto text-center">
+                <!-- Badge -->
+                <div
+                    class="reveal inline-flex items-center gap-2 bg-gold-50 border border-gold-200 rounded-full px-3 py-1.5 sm:px-4 sm:py-2 mb-4 sm:mb-6">
+                    <span class="w-2 h-2 bg-gold-500 rounded-full pulse-subtle"></span>
+                    <span class="text-gold-700 text-sm sm:text-base font-medium">Dipercaya 700+ Jamaah di Indonesia
+                        (2025)</span>
+                </div>
+
+                <!-- Main Headline -->
+                <h1
+                    class="reveal text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-gray-900 leading-tight mb-4 sm:mb-6">
+                    Umroh Mandiri.<br>
+                    <span class="text-gradient font-bold">Hemat 15 Juta.</span><br>
+                    Tanpa Travel.<br>
+                    Tanpa Bingung<br>
+                    & Tergesa-gesa
+                </h1>
+
+                <!-- Subheadline -->
+                <p class="reveal text-lg sm:text-xl md:text-2xl text-gray-600 mb-6 sm:mb-8 leading-relaxed px-2">
+                    Panduan lengkap step by step dari urus visa, booking hotel murah,
+                    cari tiket terbaik, hingga ibadah yang sah sesuai sunnah.<br class="hidden sm:block">
+                    <strong>
+                        Cocok untuk pemula. Aman. Legal.
+                        <span class="text-green-700 font-bold bg-green-100 px-2 py-1 rounded ml-1 text-base">
+                            TERUPDATE 2026
+                        </span>
+                    </strong>
+                </p>
+
+                <!-- Hero Image Slider -->
+                <div class="reveal relative mb-6 sm:mb-8 max-w-[320px] sm:max-w-[360px] mx-auto">
+                    <div class="hero-slider rounded-2xl overflow-hidden shadow-lg" id="heroSlider">
+                        <div class="slider-track" id="sliderTrack">
+                            <div class="slide">
+                                <img src="https://cdn.scalev.id/uploads/1773555187/7FHSUDwoRuH1U1axW77heg/1773555188013-2-(1).webp"
+                                    alt="Tips Booking Pesawat - Kelas Umroh" loading="eager">
+                            </div>
+                            <div class="slide">
+                                <img src="https://cdn.scalev.id/uploads/1773555187/7FHSUDwoRuH1U1axW77heg/1773555188013-2-(1).webp"
+                                    alt="Aplikasi Wajib Umroh - Kelas Umroh" loading="lazy">
+                            </div>
+                            <div class="slide">
+                                <img src="https://cdn.scalev.id/uploads/1773555161/-SHqv5nonamNuJOZCwA66Q/1773555162458-1-(1).webp"
+                                    alt="Tips Booking Hotel - Kelas Umroh" loading="lazy">
+                            </div>
+                            <div class="slide">
+                                <img src="https://cdn.scalev.id/uploads/1773555213/kvxQCD8zL3IcaVhKaeiG1Q/1773555214068-4.webp"
+                                    alt="Tips Urus Berkas - Kelas Umroh" loading="lazy">
+                            </div>
+                            <div class="slide">
+                                <img src="https://cdn.scalev.id/uploads/1773555201/ydTow6jjHj-8Bkq66A7I3w/1773555202055-3-(1).webp"
+                                    alt="Tips Transport - Kelas Umroh" loading="lazy">
+                            </div>
+                        </div>
+
+                        <button class="slider-btn prev" id="sliderPrev" aria-label="Slide sebelumnya">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M15 18l-6-6 6-6" />
+                            </svg>
+                        </button>
+                        <button class="slider-btn next" id="sliderNext" aria-label="Slide berikutnya">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M9 18l6-6-6-6" />
+                            </svg>
+                        </button>
+
+                        <div class="slider-dots" id="sliderDots">
+                            <button class="slider-dot active" data-index="0" aria-label="Slide 1"></button>
+                            <button class="slider-dot" data-index="1" aria-label="Slide 2"></button>
+                            <button class="slider-dot" data-index="2" aria-label="Slide 3"></button>
+                            <button class="slider-dot" data-index="3" aria-label="Slide 4"></button>
+                            <button class="slider-dot" data-index="4" aria-label="Slide 5"></button>
+                            <button class="slider-dot" data-index="5" aria-label="Slide 6"></button>
+                        </div>
+
+                        <div class="slider-progress" id="sliderProgress"></div>
+                    </div>
+                </div>
+
+                <!-- CTA Button -->
+                <div class="reveal">
+                    <a href="#simulasi-biaya"
+                        class="btn-primary inline-flex items-center justify-center gap-2 sm:gap-3 w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-semibold text-lg sm:text-xl">
+                        <span>Travel Umroh vs Umroh Mandiri</span>
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                    </a>
+                    <p class="text-base text-gray-500 mt-3">
+                        simak estimasi biaya nya disini
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROBLEM SECTION -->
+        <section class="w-full py-10 sm:py-12 md:py-14 px-4 bg-cream-100">
+            <div class="max-w-2xl mx-auto">
+                <div class="reveal text-center mb-8 sm:mb-10">
+                    <span
+                        class="inline-block text-gold-600 font-medium text-sm sm:text-base uppercase tracking-wider mb-2 sm:mb-3">
+                        Banyak Orang Ingin Umroh.
+                    </span>
+                    <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
+                        Tapi Takut Berangkat Sendiri.
+                    </h2>
+                </div>
+
+                <div class="reveal-stagger space-y-3 sm:space-y-4">
+                    <div class="flex items-start gap-3 sm:gap-4 bg-white p-4 sm:p-5 rounded-xl gold-border">
+                        <div
+                            class="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 bg-red-50 rounded-full flex items-center justify-center">
+                            <svg class="w-4 h-4 sm:w-5 sm:h-5 text-red-400" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-800 mb-1 text-base sm:text-lg">Takut salah urutan ibadah
+                                di Ka'bah</h3>
+                            <p class="text-gray-600 text-sm sm:text-base">Urutan salah bisa bikin ibadah tidak sah. Ini
+                                ibadah seumur hidup. Jangan sampai salah.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-3 sm:gap-4 bg-white p-4 sm:p-5 rounded-xl gold-border">
+                        <div
+                            class="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 bg-red-50 rounded-full flex items-center justify-center">
+                            <svg class="w-4 h-4 sm:w-5 sm:h-5 text-red-400" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-800 mb-1 text-base sm:text-lg">Tersesat di Mekkah.
+                                Sendirian. Malam.</h3>
+                            <p class="text-gray-600 text-sm sm:text-base">Keluar masjid lewat pintu berbeda. HP hampir
+                                mati. Tidak tahu arah pulang, bisa terjadi pada siapa saja.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-3 sm:gap-4 bg-white p-4 sm:p-5 rounded-xl gold-border">
+                        <div
+                            class="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 bg-red-50 rounded-full flex items-center justify-center">
+                            <svg class="w-4 h-4 sm:w-5 sm:h-5 text-red-400" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-800 mb-1 text-base sm:text-lg">Paket travel yang mahal
+                            </h3>
+                            <p class="text-gray-600 text-sm sm:text-base">Perorang bisa 35 Juta dan umroh sekeluarga
+                                bisa
+                                sampai ratusan juta. Uang sebanyak itu bisa dihemat belasan juta.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-3 sm:gap-4 bg-white p-4 sm:p-5 rounded-xl gold-border">
+                        <div
+                            class="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 bg-red-50 rounded-full flex items-center justify-center">
+                            <svg class="w-4 h-4 sm:w-5 sm:h-5 text-red-400" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-800 mb-1 text-base sm:text-lg">Urus visa sendiri?
+                                Kedengarannya rumit</h3>
+                            <p class="text-gray-600 text-sm sm:text-base">E-visa, asuransi, paspor, booking hotel, semua
+                                terasa membingungkan. Akhirnya menyerah dan balik ke travel mahal.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-3 sm:gap-4 bg-white p-4 sm:p-5 rounded-xl gold-border">
+                        <div
+                            class="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 bg-red-50 rounded-full flex items-center justify-center">
+                            <svg class="w-4 h-4 sm:w-5 sm:h-5 text-red-400" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-800 mb-1 text-base sm:text-lg">Tidak bisa bahasa Arab
+                                sama sekali</h3>
+                            <p class="text-gray-600 text-sm sm:text-base">Naik taksi bingung. Beli makan bingung. Tanya
+                                arah bingung. Hambatan bahasa jadi alasan terbesar takut berangkat sendiri.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Agitation -->
+                <div
+                    class="reveal mt-6 sm:mt-10 p-4 sm:p-6 bg-gradient-to-br from-cream-200 to-cream-100 rounded-2xl border border-gold-200/50">
+                    <p class="text-gray-700 leading-relaxed text-center text-base sm:text-lg">
+                        Anda sudah <strong>bertahun-tahun menabung</strong> untuk momen ini.
+                        Jangan biarkan <strong>ketidaksiapan</strong> merusak ibadah paling sakral dalam hidup
+                        Anda.<br><br>
+                        <span class="font-semibold text-gold-700">Semua kekhawatiran di atas bisa dihindari. Dengan
+                            panduan yang benar.</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SIMULASI BIAYA SECTION -->
+        <section id="simulasi-biaya" class="w-full py-10 sm:py-12 md:py-14 px-4">
+            <div class="max-w-2xl mx-auto">
+                <div class="reveal text-center mb-6 sm:mb-8">
+                    <span
+                        class="inline-block text-gold-600 font-medium text-sm sm:text-base uppercase tracking-wider mb-2 sm:mb-3">
+                        Bukan Janji Kosong — Ini Angka Nyata
+                    </span>
+                    <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-2 sm:mb-3">
+                        Simulasi Biaya <span class="text-gradient">Umroh Mandiri</span>
+                    </h2>
+                    <p class="text-gray-500 text-base sm:text-lg max-w-xl mx-auto">
+                        Estimasi biaya realistis jika umroh mandiri tanpa travel
+                    </p>
+                </div>
+
+                <!-- COST CARD -->
+                <div class="reveal bg-white rounded-2xl shadow-lg overflow-hidden mb-6 sm:mb-8 border border-gold-200">
+                    <div class="bg-gradient-to-r from-gold-500 to-gold-400 px-4 sm:px-6 py-3 sm:py-4 text-center">
+                        <p class="text-white font-semibold text-sm sm:text-base tracking-wide">
+                            Estimasi Biaya Umroh Mandiri (Per Orang)
+                        </p>
+                    </div>
+
+                    <div class="p-4 sm:p-6">
+                        <div
+                            class="grid grid-cols-[40px_1fr_auto] sm:grid-cols-[50px_1fr_auto] items-center py-3 sm:py-4 border-b border-gray-100 gap-2 sm:gap-4">
+                            <div
+                                class="w-8 h-8 sm:w-10 sm:h-10 bg-gold-50 rounded-lg flex items-center justify-center border border-gold-200">
+                                <svg class="w-4 h-4 sm:w-5 sm:h-5 text-gold-600" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M2 16l20-6-20-6v5l14 1-14 1v5z" />
+                                </svg>
+                            </div>
+                            <p class="font-medium text-gray-800 text-sm sm:text-base">Tiket PP Indonesia – Jeddah</p>
+                            <span class="font-bold text-gold-700 text-base sm:text-xl tabular-nums">± 12 – 15 jt</span>
+                        </div>
+
+                        <div
+                            class="grid grid-cols-[40px_1fr_auto] sm:grid-cols-[50px_1fr_auto] items-center py-3 sm:py-4 border-b border-gray-100 gap-2 sm:gap-4">
+                            <div
+                                class="w-8 h-8 sm:w-10 sm:h-10 bg-gold-50 rounded-lg flex items-center justify-center border border-gold-200">
+                                <svg class="w-4 h-4 sm:w-5 sm:h-5 text-gold-600" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 21h18M5 21V7a2 2 0 012-2h10a2 2 0 012 2v14M9 10h.01M15 10h.01M9 14h.01M15 14h.01" />
+                                </svg>
+                            </div>
+                            <p class="font-medium text-gray-800 text-sm sm:text-base">Hotel 6 malam (quad room)</p>
+                            <span class="font-bold text-gold-700 text-base sm:text-xl tabular-nums">± 2,5 – 3 jt</span>
+                        </div>
+
+                        <div
+                            class="grid grid-cols-[40px_1fr_auto] sm:grid-cols-[50px_1fr_auto] items-center py-3 sm:py-4 border-b border-gray-100 gap-2 sm:gap-4">
+                            <div
+                                class="w-8 h-8 sm:w-10 sm:h-10 bg-gold-50 rounded-lg flex items-center justify-center border border-gold-200">
+                                <svg class="w-4 h-4 sm:w-5 sm:h-5 text-gold-600" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 12h6m-6 4h6M7 4h10a2 2 0 012 2v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6a2 2 0 012-2z" />
+                                </svg>
+                            </div>
+                            <p class="font-medium text-gray-800 text-sm sm:text-base">Visa Umroh</p>
+                            <span class="font-bold text-gold-700 text-base sm:text-xl tabular-nums">± 2 – 2,5 jt</span>
+                        </div>
+
+                        <div
+                            class="grid grid-cols-[40px_1fr_auto] sm:grid-cols-[50px_1fr_auto] items-center py-3 sm:py-4 border-b border-gray-100 gap-2 sm:gap-4">
+                            <div
+                                class="w-8 h-8 sm:w-10 sm:h-10 bg-gold-50 rounded-lg flex items-center justify-center border border-gold-200">
+                                <svg class="w-4 h-4 sm:w-5 sm:h-5 text-gold-600" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M8 17h8M6 17l-2-5h16l-2 5M7 17v2M17 17v2M6 12V7a2 2 0 012-2h8a2 2 0 012 2v5" />
+                                </svg>
+                            </div>
+                            <p class="font-medium text-gray-800 text-sm sm:text-base">Transportasi lokal</p>
+                            <span class="font-bold text-gold-700 text-base sm:text-xl tabular-nums">± 300rb –
+                                500rb</span>
+                        </div>
+
+                        <div
+                            class="grid grid-cols-[40px_1fr_auto] sm:grid-cols-[50px_1fr_auto] items-center py-3 sm:py-4 border-b border-gray-100 gap-2 sm:gap-4">
+                            <div
+                                class="w-8 h-8 sm:w-10 sm:h-10 bg-gold-50 rounded-lg flex items-center justify-center border border-gold-200">
+                                <svg class="w-4 h-4 sm:w-5 sm:h-5 text-gold-600" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 3v7a4 4 0 004 4v7M8 3v7M12 3v18M16 3l4 4-4 4V3z" />
+                                </svg>
+                            </div>
+                            <p class="font-medium text-gray-800 text-sm sm:text-base">Makan & logistik</p>
+                            <span class="font-bold text-gold-700 text-base sm:text-xl tabular-nums">± 500rb – 1jt</span>
+                        </div>
+
+                        <div
+                            class="grid grid-cols-[1fr_auto] items-center py-3 sm:py-4 px-3 sm:px-4 mt-3 sm:mt-4 rounded-xl bg-gold-50 border border-gold-200">
+                            <p class="font-bold text-gray-900 text-base sm:text-lg">Total Estimasi</p>
+                            <span class="font-bold text-gold-700 text-2xl sm:text-3xl tabular-nums">± 17 – 22
+                                juta</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- COMPARISON -->
+                <div class="reveal grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mb-6">
+                    <div class="bg-white rounded-2xl p-4 sm:p-6 text-center border-2 border-red-200">
+                        <p class="text-red-500 text-sm uppercase tracking-wider font-semibold mb-1 sm:mb-2">Via Travel
+                        </p>
+                        <span class="font-bold text-red-500 text-2xl sm:text-3xl tabular-nums">± 32 – 35 juta</span>
+                        <p class="text-gray-400 text-sm mt-1">per orang</p>
+                    </div>
+
+                    <div class="bg-white rounded-2xl p-4 sm:p-6 text-center border-2 border-gold-400">
+                        <p class="text-gold-700 text-sm uppercase tracking-wider font-semibold mb-1 sm:mb-2">Umroh
+                            Mandiri</p>
+                        <span class="font-bold text-gold-700 text-2xl sm:text-3xl tabular-nums">± 17 – 22 juta</span>
+                        <p class="text-gold-600 text-sm mt-1 font-semibold">per orang</p>
+                    </div>
+                </div>
+
+                <!-- Savings Highlight -->
+                <div
+                    class="reveal max-w-xl mx-auto rounded-2xl px-4 sm:px-6 py-5 sm:py-7 text-center mb-6 sm:mb-10 bg-gradient-to-r from-emerald-700 via-emerald-600 to-emerald-500 shadow-lg">
+                    <p class="text-emerald-200 text-sm sm:text-base font-medium mb-1">Potensi Penghematan Anda</p>
+                    <span class="block font-bold text-white text-2xl sm:text-3xl md:text-4xl tabular-nums mb-2">Hemat
+                        hingga 15 juta</span>
+                    <p class="text-emerald-200 text-sm sm:text-base leading-relaxed max-w-md mx-auto">
+                        Bisa untuk oleh-oleh, sedekah di Tanah Suci, jalan-jalan ke destinasi terdekat, atau dana umroh
+                        berikutnya.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SOLUTION SECTION -->
+        <section id="solution" class="w-full py-10 sm:py-12 md:py-14 px-4 bg-cream-100">
+            <div class="max-w-2xl mx-auto">
+                <div class="reveal text-center mb-8 sm:mb-10">
+                    <span
+                        class="inline-block text-gold-600 font-medium text-sm sm:text-base uppercase tracking-wider mb-2 sm:mb-3">
+                        Solusi Lengkap. Satu Panduan.
+                    </span>
+                    <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-3 sm:mb-4">
+                        Perkenalkan: <span class="text-gradient"> EbookPanduan Umroh Mandiri</span>
+                    </h2>
+                    <p class="text-gray-600 text-base sm:text-xl max-w-2xl mx-auto leading-relaxed">
+                        Dari nol hingga pulang ke tanah air. Lengkap. Step-by-step.
+                        Dirancang khusus untuk pemula yang belum pernah umroh sekalipun.
+                    </p>
+                </div>
+
+                <!-- COACH PROFILE SECTION -->
+                <div
+                    class="reveal bg-white rounded-2xl shadow-lg border border-gold-200 p-5 md:p-8 flex flex-col md:flex-row items-center gap-6 mb-8 sm:mb-10">
+                    <div class="flex-shrink-0 mx-auto md:mx-0">
+                        <img src="images/coach.png" alt="Ustadz H. Fajar Nugraha"
+                            class="w-32 md:w-40 rounded-xl object-cover shadow-sm gold-border">
+                    </div>
+                    <div class="text-center md:text-left">
+                        <h3 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
+                            Perkenalkan, Saya Ustadz H. Fajar Nugraha
+                        </h3>
+                        <p class="text-gray-600 text-sm sm:text-base leading-relaxed mb-2 text-justify">
+                            Saya adalah pembimbing Umroh Mandiri yang telah membantu jamaah Indonesia melaksanakan umroh
+                            secara mandiri selama lebih dari 3 tahun.
+                        </p>
+                        <p class="text-gray-600 text-sm sm:text-base leading-relaxed mb-2 text-justify">
+                            Panduan ini saya susun berdasarkan pengalaman langsung mendampingi jamaah, mulai dari
+                            pengurusan visa, booking hotel, hingga pelaksanaan ibadah di Mekkah dan Madinah.
+                            Semua disusun step-by-step agar bisa diikuti bahkan oleh yang belum pernah umroh sekalipun.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Product Features -->
+                <div class="reveal-stagger space-y-3 sm:space-y-5 mb-8 sm:mb-10">
+                    <div class="flex items-start gap-3 sm:gap-4 bg-white p-4 sm:p-6 rounded-xl shadow-sm gold-border">
+                        <div
+                            class="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 bg-gold-50 rounded-xl flex items-center justify-center">
+                            <svg class="w-5 h-5 sm:w-6 sm:h-6 text-gold-600" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-800 mb-1 sm:mb-2 text-base sm:text-lg">Panduan
+                                Step-by-Step dari A sampai Z</h3>
+                            <p class="text-gray-600 text-sm sm:text-base">Urus e-visa mandiri. Booking hotel murah dekat
+                                Masjidil Haram. Cari tiket termurah. Urutan ibadah yang benar. Semuanya ada selangkah
+                                demi selangkah.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-3 sm:gap-4 bg-white p-4 sm:p-6 rounded-xl shadow-sm gold-border">
+                        <div
+                            class="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 bg-gold-50 rounded-xl flex items-center justify-center">
+                            <svg class="w-5 h-5 sm:w-6 sm:h-6 text-gold-600" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-800 mb-1 sm:mb-2 text-base sm:text-lg">Peta & Navigasi
+                                Mekkah-Madinah</h3>
+                            <p class="text-gray-600 text-sm sm:text-base">Tidak akan tersesat. Pintu masuk terbaik, rute
+                                transportasi termurah, dan tips hindari antrean thawaf semua tersedia.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-3 sm:gap-4 bg-white p-4 sm:p-6 rounded-xl shadow-sm gold-border">
+                        <div
+                            class="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 bg-gold-50 rounded-xl flex items-center justify-center">
+                            <svg class="w-5 h-5 sm:w-6 sm:h-6 text-gold-600" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-800 mb-1 sm:mb-2 text-base sm:text-lg">Strategi Hemat
+                                Hingga Belasan Juta</h3>
+                            <p class="text-gray-600 text-sm sm:text-base">Breakdown biaya real. Trik cari tiket murah.
+                                Booking hotel harga lokal. Tanpa mengorbankan kenyamanan ibadah Anda.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-3 sm:gap-4 bg-white p-4 sm:p-6 rounded-xl shadow-sm gold-border">
+                        <div
+                            class="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 bg-gold-50 rounded-xl flex items-center justify-center">
+                            <svg class="w-5 h-5 sm:w-6 sm:h-6 text-gold-600" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-800 mb-1 sm:mb-2 text-base sm:text-lg">Template Itinerary
+                                Harian Siap Pakai</h3>
+                            <p class="text-gray-600 text-sm sm:text-base">Jadwal sudah diatur thawaf, istirahat, ziarah.
+                                Tinggal ikuti. Ibadah optimal, fisik tetap kuat.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-3 sm:gap-4 bg-white p-4 sm:p-6 rounded-xl shadow-sm gold-border">
+                        <div
+                            class="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 bg-gold-50 rounded-xl flex items-center justify-center">
+                            <svg class="w-5 h-5 sm:w-6 sm:h-6 text-gold-600" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-800 mb-1 sm:mb-2 text-base sm:text-lg">Nyaman Umroh Tanpa
+                                Mutawwif</h3>
+                            <p class="text-gray-600 text-sm sm:text-base">Dilengkapi dengan audio panduan thawaf dan
+                                sa'i yang bisa langsung diputar di HP Anda. Serasa didampingi langsung oleh Mutawwif
+                                profesional!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SOCIAL PROOF STAT -->
+        <section class="w-full pt-4 pb-6 px-4">
+            <div class="max-w-2xl mx-auto">
+                <div class="reveal rounded-2xl p-4 sm:p-6 text-center shadow-lg relative overflow-hidden"
+                    style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 40%, #0f3460 100%);">
+                    <div class="absolute inset-0 opacity-5"
+                        style="background-image: url('data:image/svg+xml,%3Csvg width=&quot;30&quot; height=&quot;30&quot; viewBox=&quot;0 0 30 30&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;%3E%3Ccircle cx=&quot;15&quot; cy=&quot;15&quot; r=&quot;2&quot; fill=&quot;%23D4AF37&quot;/%3E%3C/svg%3E');">
+                    </div>
+                    <div class="relative z-10">
+                        <div class="flex items-center justify-center gap-2 sm:gap-3 mb-1">
+                            <svg class="w-5 h-5 sm:w-7 sm:h-7 text-gold-400" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                            </svg>
+                            <p class="font-display text-4xl sm:text-5xl md:text-6xl font-bold text-gradient">724+</p>
+                        </div>
+                        <p class="text-white font-semibold text-lg sm:text-xl">Jamaah Sudah Terbantu</p>
+                        <p class="text-gray-400 text-sm sm:text-base mt-1">dan berhasil umroh mandiri dengan panduan ini
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SOCIAL PROOF SECTION -->
+        <section id="social-proof" class="w-full py-10 sm:py-12 md:py-14 px-4 bg-cream-100">
+            <div class="max-w-2xl mx-auto">
+                <div class="reveal text-center mb-6 sm:mb-8">
+                    <span
+                        class="inline-block text-gold-600 font-medium text-sm sm:text-base uppercase tracking-wider mb-2 sm:mb-3">
+                        Dipercaya Ratusan Jamaah
+                    </span>
+                    <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
+                        Apa Kata Mereka?
+                    </h2>
+                </div>
+
+                <!-- Testimonial Screenshot Carousel -->
+                <div class="reveal relative mb-6 sm:mb-10 max-w-[320px] sm:max-w-[360px] mx-auto">
+                    <div class="testi-slider rounded-2xl overflow-hidden shadow-lg" id="testiSlider">
+                        <div class="slider-track" id="testiTrack">
+                            <div class="slide">
+                                <img src="https://cdn.scalev.id/uploads/1773556994/pekbSvZBce3YrmF8Lx-gmw/1773556995612-9-(1).webp"
+                                    alt="Testimoni WA 1" loading="lazy">
+                            </div>
+                            <div class="slide">
+                                <img src="https://cdn.scalev.id/uploads/1773557009/ln_d3yJ3Rwl8tz6J5V1sfA/1773557010436-10-(1).webp"
+                                    alt="Testimoni WA 2" loading="lazy">
+                            </div>
+                            <div class="slide">
+                                <img src="https://cdn.scalev.id/uploads/1773557021/nTE8lSNGi-x12sM9VT-otQ/1773557022528-11.webp"
+                                    alt="Testimoni WA 3" loading="lazy">
+                            </div>
+                            <div class="slide">
+                                <img src="https://cdn.scalev.id/uploads/1773557033/UmxG_SH-tX1Oj1XDkjI02A/1773557034741-12-(1).webp"
+                                    alt="Testimoni WA 4" loading="lazy">
+                            </div>
+                        </div>
+
+                        <button class="slider-btn prev" id="testiPrev" aria-label="Testimoni sebelumnya">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M15 18l-6-6 6-6" />
+                            </svg>
+                        </button>
+                        <button class="slider-btn next" id="testiNext" aria-label="Testimoni berikutnya">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M9 18l6-6-6-6" />
+                            </svg>
+                        </button>
+
+                        <div class="slider-dots" id="testiDots">
+                            <button class="slider-dot active" data-index="0" aria-label="Testimoni 1"></button>
+                            <button class="slider-dot" data-index="1" aria-label="Testimoni 2"></button>
+                            <button class="slider-dot" data-index="2" aria-label="Testimoni 3"></button>
+                            <button class="slider-dot" data-index="3" aria-label="Testimoni 4"></button>
+                            <button class="slider-dot" data-index="4" aria-label="Testimoni 5"></button>
+                        </div>
+
+                        <div class="slider-progress" id="testiProgress"></div>
+                    </div>
+                </div>
+
+                <div class="reveal-stagger space-y-4 sm:space-y-5">
+                    <div class="testimonial-card bg-white p-4 sm:p-6 rounded-xl gold-border">
+                        <div class="flex items-center gap-1 mb-3">
+                            <svg class="w-4 h-4 sm:w-5 sm:h-5 text-gold-400" fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg class="w-4 h-4 sm:w-5 sm:h-5 text-gold-400" fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.570-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg class="w-4 h-4 sm:w-5 sm:h-5 text-gold-400" fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.570-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg class="w-4 h-4 sm:w-5 sm:h-5 text-gold-400" fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.570-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg class="w-4 h-4 sm:w-5 sm:h-5 text-gold-400" fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.570-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                        </div>
+
+                        <p class="text-gray-700 mb-3 leading-relaxed text-base sm:text-lg">
+                            Dari pengalaman kami membantu banyak jamaah berangkat umroh mandiri,
+                            banyak yang akhirnya bisa menghemat budget cukup besar dibanding paket travel.
+                            Sisa budget tersebut biasanya dialokasikan untuk:
+                        </p>
+
+                        <ul class="list-disc pl-5 text-gray-700 text-sm sm:text-base space-y-1 mb-4">
+                            <li>City tour ke <strong>Thaif</strong></li>
+                            <li>Mengunjungi <strong>Al Ula</strong></li>
+                            <li>Ziarah ke <strong>Jabal Uhud</strong></li>
+                            <li>Mengunjungi <strong>Masjid Quba Qiblatain</strong></li>
+                            <li>City tour sekitar <strong>Madinah</strong></li>
+                            <li>Mengunjungi <strong>Jabal Khandamah</strong></li>
+                            <li>Menikmati <strong>kuliner khas Arab</strong></li>
+                            <li>Membeli <strong>oleh-oleh</strong> untuk keluarga</li>
+                            <li>Menambah <strong>malam menginap hotel</strong></li>
+                            <li>Menyimpan sisa dana untuk <strong>umroh berikutnya</strong></li>
+                        </ul>
+
+                        <div class="flex items-center gap-3">
+                            <div
+                                class="w-8 h-8 sm:w-10 sm:h-10 bg-gold-100 rounded-full flex items-center justify-center">
+                                <span class="text-gold-700 font-semibold text-sm sm:text-base">400+</span>
+                            </div>
+                            <div>
+                                <p class="font-semibold text-gray-800 text-sm sm:text-base">400+ Jamaah</p>
+                                <p class="text-gray-500 text-sm">Pengguna Panduan Umroh Mandiri</p>
+                            </div>
+                        </div>
+
+                        <div class="mt-4 sm:mt-5 pt-4 border-t">
+                            <div
+                                class="bg-emerald-50 border border-emerald-200 rounded-lg px-3 sm:px-4 py-3 text-center">
+                                <p class="text-sm sm:text-lg font-semibold text-gray-800 leading-relaxed">
+                                    Cocok untuk kamu yang ingin
+                                    <span class="text-emerald-600 font-bold">umroh mandiri</span>
+                                    sendiri, bersama
+                                    <span class="font-bold">pasangan</span>,
+                                    <span class="font-bold">sahabat</span>,
+                                    atau <span class="font-bold">rombongan keluarga</span>.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CHECKOUT SECTION -->
+        <section id="checkout" class="w-full py-10 sm:py-12 md:py-14 px-4 bg-gradient-to-b from-cream-100 to-cream-50">
+            <div class="max-w-2xl mx-auto">
+                <div class="reveal text-center mb-6 sm:mb-8">
+                    <span
+                        class="inline-block text-gold-600 font-medium text-sm sm:text-base uppercase tracking-wider mb-2 sm:mb-3">Investasi
+                        Terkecil untuk Penghematan Terbesar</span>
+                    <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
+                        Berapa Investasi untuk Panduan Ini?
+                    </h2>
+                    <p class="text-gray-600 text-base sm:text-lg max-w-lg mx-auto">
+                        Jika mengikuti travel, Anda bisa menghabiskan hingga <strong>35 juta per orang</strong>. Namun
+                        dengan panduan ini, Anda bisa belajar bagaimana merencanakan umroh mandiri dengan biaya
+                        <strong>jauh lebih hemat.</strong>
+                    </p>
+                </div>
+
+                <!-- Pricing Card -->
+                <div class="reveal bg-white rounded-2xl shadow-xl gold-glow gold-border overflow-hidden">
+                    <div class="bg-gradient-to-r from-gold-500 to-gold-400 px-4 sm:px-6 py-3 sm:py-4 text-center">
+                        <h2 class="text-white/90 text-sm sm:text-base font-medium">Promo Terbatas Hari Ini !!</h2>
+                    </div>
+
+                    <div class="p-4 sm:p-6 md:p-8">
+                        <div class="text-center mb-4 sm:mb-6">
+                            <div class="flex items-center justify-center gap-2 sm:gap-3 mb-2">
+                                <span class="relative inline-block text-gray-500 text-xl sm:text-3xl font-semibold">
+                                    Rp 288.000
+                                    <span
+                                        class="absolute left-0 top-1/2 w-full h-[2px] bg-red-500 rotate-[-8deg]"></span>
+                                </span>
+                                <span
+                                    class="bg-red-50 text-red-600 text-sm sm:text-base font-semibold px-2 sm:px-3 py-1 rounded-full">Hemat
+                                    69%</span>
+                            </div>
+                            <p class="font-bold text-5xl sm:text-6xl md:text-7xl font-bold text-gray-900">
+                                Rp 99<span class="text-3xl sm:text-4xl">.000</span>
+                            </p>
+                            <p class="text-gray-500 text-sm sm:text-base mt-2">Sekali bayar, akses selamanya</p>
+                        </div>
+
+                        <div class="text-center mb-2 sm:mb-3">
+                            <p class="text-red-600 font-bold text-base sm:text-lg">🔥 KHUSUS 100 ORANG TERCEPAT DI BULAN
+                                INI</p>
+                        </div>
+                        <div
+                            class="bg-red-50 border border-red-200 rounded-xl p-3 sm:p-4 mb-4 sm:mb-6 flex flex-col items-center justify-center gap-2 text-center">
+                            <div class="flex items-center gap-2">
+                                <svg class="w-4 h-4 sm:w-5 sm:h-5 text-red-600" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                                <span class="text-red-800 font-semibold text-base sm:text-lg" id="stock-counter">
+                                    Sisa Slot: 23 Orang
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="mb-4 sm:mb-6">
+                            <p class="font-semibold text-gray-800 mb-3 sm:mb-4 text-base sm:text-lg">Yang Kamu Dapatkan:
+                            </p>
+                            <ul class="space-y-2 sm:space-y-3">
+                                <li class="flex items-start gap-2 sm:gap-3">
+                                    <svg class="w-4 h-4 sm:w-5 sm:h-5 text-green-500 flex-shrink-0 mt-0.5" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7" />
+                                    </svg>
+                                    <span class="text-gray-700 text-base sm:text-lg">Panduan lengkap (PDF)</span>
+                                </li>
+                                <li class="flex items-start gap-2 sm:gap-3">
+                                    <svg class="w-4 h-4 sm:w-5 sm:h-5 text-green-500 flex-shrink-0 mt-0.5" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7" />
+                                    </svg>
+                                    <span class="text-gray-700 text-base sm:text-lg">Tips urus visa &
+                                        dokumen umroh</span>
+                                </li>
+                                <li class="flex items-start gap-2 sm:gap-3">
+                                    <svg class="w-4 h-4 sm:w-5 sm:h-5 text-green-500 flex-shrink-0 mt-0.5" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7" />
+                                    </svg>
+                                    <span class="text-gray-700 text-base sm:text-lg">Cara booking hotel murah</span>
+                                </li>
+                                <li class="flex items-start gap-2 sm:gap-3">
+                                    <svg class="w-4 h-4 sm:w-5 sm:h-5 text-green-500 flex-shrink-0 mt-0.5" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7" />
+                                    </svg>
+                                    <span class="text-gray-700 text-base sm:text-lg">Template itinerary umroh siap
+                                        pakai</span>
+                                </li>
+                                <li class="flex items-start gap-2 sm:gap-3">
+                                    <svg class="w-4 h-4 sm:w-5 sm:h-5 text-green-500 flex-shrink-0 mt-0.5" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7" />
+                                    </svg>
+                                    <span class="text-gray-700 text-base sm:text-lg">Doa & dzikir umroh sesuai sunnah</span>
+                                </li>
+                                <li class="flex items-start gap-2 sm:gap-3">
+                                    <svg class="w-4 h-4 sm:w-5 sm:h-5 text-green-500 flex-shrink-0 mt-0.5" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7" />
+                                    </svg>
+                                    <span class="text-gray-700 text-base sm:text-lg">Referensi spot destinasi umroh</span>
+                                </li>
+                                <li class="flex items-start gap-2 sm:gap-3">
+                                    <svg class="w-4 h-4 sm:w-5 sm:h-5 text-green-500 flex-shrink-0 mt-0.5" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7" />
+                                    </svg>
+                                    <span class="text-gray-700 text-base sm:text-lg">Checklist dokumen & perlengkapan</span>
+                                </li>
+                            </ul>
+
+                            <!-- Bonus Section -->
+                            <div class="mt-6 sm:mt-8">
+                                <div
+                                    class="bg-gradient-to-r from-emerald-500 to-green-600 text-white rounded-xl p-3 sm:p-4 shadow-lg">
+                                    <p class="text-sm font-semibold opacity-90">Bonus Eksklusif</p>
+                                    <h3 class="text-lg sm:text-xl font-bold">Bonus Spesial Pemesanan Hari Ini</h3>
+                                    <p class="text-sm opacity-90">Semua bonus ini langsung kamu dapatkan saat membeli.
+                                    </p>
+                                </div>
+                                <div class="mt-4 space-y-3 sm:space-y-4">
+                                    <div
+                                        class="bg-green-50 border-2 border-green-400 rounded-xl p-3 sm:p-4 shadow-sm flex flex-col sm:flex-row justify-between items-start gap-3 sm:gap-4 relative">
+                                        <span
+                                            class="absolute -top-2 left-4 bg-green-600 text-white text-[10px] px-2 py-1 rounded-full font-semibold shadow">BONUS
+                                            UTAMA</span>
+                                        <div>
+                                            <p class="font-semibold text-gray-900 text-sm sm:text-base">Link Pengurusan
+                                                Visa, Pesawat & Hotel</p>
+                                            <p class="text-sm text-gray-600 mt-1">Akses link rahasia untuk memesan tiket
+                                                pesawat, hotel dan visa dengan harga jauh lebih hemat.</p>
+                                        </div>
+                                        <div class="sm:text-right flex-shrink-0">
+                                            <p class="line-through text-gray-400 text-base font-medium">Rp 199.000</p>
+                                            <span
+                                                class="bg-green-600 text-white text-sm px-3 py-1 rounded-full font-semibold shadow">GRATIS</span>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="bg-white border rounded-xl p-3 sm:p-4 shadow-sm flex flex-col sm:flex-row justify-between items-start gap-3 sm:gap-4">
+                                        <div>
+                                            <p class="font-semibold text-gray-800 text-sm sm:text-base">Do'a & Dzikir
+                                                Umroh Sesuai Sunnah</p>
+                                            <p class="text-sm text-gray-500 mt-1">Panduan doa dari berangkat sampai
+                                                pulang, ringkas dan mudah diikuti.</p>
+                                        </div>
+                                        <div class="sm:text-right flex-shrink-0">
+                                            <span
+                                                class="bg-green-100 text-green-600 text-sm px-2 py-1 rounded-full font-semibold">GRATIS</span>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="bg-white border rounded-xl p-3 sm:p-4 shadow-sm flex flex-col sm:flex-row justify-between items-start gap-3 sm:gap-4">
+                                        <div>
+                                            <p class="font-semibold text-gray-800 text-sm sm:text-base">Checklist
+                                                Rencana
+                                                Harian Umroh Mandiri</p>
+                                            <p class="text-sm text-gray-500 mt-1">Roadmap harian agar tidak bingung saat
+                                                menjalankan ibadah.</p>
+                                        </div>
+                                        <div class="sm:text-right flex-shrink-0">
+                                            <span
+                                                class="bg-green-100 text-green-600 text-sm px-2 py-1 rounded-full font-semibold">GRATIS</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Konsultasi Community -->
+                            <div class="mt-4 sm:mt-6 bg-white border rounded-xl p-4 sm:p-5 shadow-sm">
+                                <div class="flex items-start gap-2 sm:gap-3">
+                                    <div class="bg-green-100 text-green-600 p-1.5 sm:p-2 rounded-lg">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 sm:w-5 sm:h-5"
+                                            viewBox="0 0 24 24" fill="currentColor">
+                                            <path
+                                                d="M20.52 3.48A11.79 11.79 0 0012.01 0C5.39 0 .02 5.37 0 12c0 2.11.55 4.18 1.6 6.02L0 24l6.17-1.62A11.93 11.93 0 0012.01 24c6.63 0 12-5.37 12-12 0-3.2-1.25-6.21-3.49-8.52zM12 21.8c-1.86 0-3.67-.5-5.25-1.45l-.37-.22-3.66.96.98-3.57-.24-.37A9.8 9.8 0 012.2 12C2.2 6.59 6.59 2.2 12 2.2c2.61 0 5.06 1.02 6.9 2.86A9.7 9.7 0 0121.8 12c0 5.41-4.39 9.8-9.8 9.8zm5.39-7.34c-.29-.15-1.7-.84-1.96-.94-.26-.1-.45-.15-.64.15-.19.29-.73.94-.89 1.13-.16.19-.32.22-.61.07-.29-.15-1.22-.45-2.32-1.44-.86-.77-1.44-1.73-1.61-2.02-.17-.29-.02-.45.13-.6.13-.13.29-.32.44-.48.15-.16.19-.29.29-.48.1-.19.05-.35-.02-.5-.07-.15-.64-1.54-.87-2.11-.23-.56-.47-.48-.64-.49h-.55c-.19 0-.5.07-.76.35-.26.29-1 1-1 2.44 0 1.44 1.02 2.83 1.17 3.02.15.19 2.01 3.07 4.87 4.31.68.29 1.21.46 1.62.59.68.22 1.29.19 1.78.12.54-.08 1.7-.69 1.94-1.36.24-.67.24-1.25.17-1.36-.07-.11-.26-.17-.55-.32z" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <p class="font-semibold text-gray-800 text-sm sm:text-base">Akses Grup Umroh
+                                            Mandiri</p>
+                                        <p class="text-sm text-gray-500 mt-1">Kamu bisa konsultasi langsung dengan
+                                            member lain tentang tiket, hotel, visa, hingga pengalaman umroh mandiri.</p>
+                                        <span
+                                            class="inline-block mt-2 bg-green-50 text-green-600 text-sm px-2 py-1 rounded-full font-medium">Grup
+                                            WhatsApp</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CTA Button -->
+                        <a href="#form"
+                            class="btn-primary inline-flex items-center justify-center gap-2 sm:gap-3 w-full px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-semibold text-lg sm:text-xl">
+                            <span>Gabung Sekarang</span>
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                            </svg>
+                        </a>
+
+                        <!-- Trust Elements -->
+                        <div
+                            class="mt-4 sm:mt-6 flex items-center justify-center gap-4 sm:gap-6 text-sm sm:text-base text-gray-500">
+                            <div class="flex items-center gap-1 sm:gap-2">
+                                <svg class="w-3 h-3 sm:w-4 sm:h-4" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                                </svg>
+                                <span>Pembayaran Aman</span>
+                            </div>
+                            <div class="flex items-center gap-1 sm:gap-2">
+                                <svg class="w-3 h-3 sm:w-4 sm:h-4" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
+                                </svg>
+                                <span>Berbagai Metode</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Guarantee -->
+                <div
+                    class="reveal mt-4 sm:mt-6 p-4 sm:p-5 bg-white rounded-xl gold-border flex items-start gap-3 sm:gap-4">
+                    <div
+                        class="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 bg-green-50 rounded-full flex items-center justify-center">
+                        <svg class="w-5 h-5 sm:w-6 sm:h-6 text-green-600" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <p class="font-semibold text-gray-800 mb-1 text-base sm:text-lg">Garansi Kepuasan</p>
+                        <p class="text-gray-600 text-sm sm:text-base">Jika panduan ini tidak membantu persiapan umrohmu,
+                            hubungi kami dalam 7 hari untuk pengembalian dana penuh.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ SECTION -->
+        <section class="w-full py-10 sm:py-12 md:py-14 px-4">
+            <div class="max-w-2xl mx-auto">
+                <div class="reveal text-center mb-8 sm:mb-10">
+                    <span
+                        class="inline-block text-gold-600 font-medium text-sm sm:text-base uppercase tracking-wider mb-2 sm:mb-3">Masih
+                        Ragu? Kami Jawab Satu per Satu</span>
+                    <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
+                        Pertanyaan yang Sering Ditanyakan
+                    </h2>
+                </div>
+
+                <div class="reveal-stagger space-y-2 sm:space-y-3">
+                    <div class="faq-item bg-white rounded-xl gold-border overflow-hidden">
+                        <button class="faq-toggle w-full flex items-center justify-between p-4 sm:p-5 text-left"
+                            aria-expanded="false">
+                            <span class="font-semibold text-gray-800 pr-4 text-sm sm:text-base">Apakah umroh mandiri itu
+                                legal?</span>
+                            <svg class="faq-icon w-4 h-4 sm:w-5 sm:h-5 text-gold-500 flex-shrink-0 transition-transform duration-300"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="faq-answer px-4 sm:px-5">
+                            <p class="text-gray-600 pb-4 sm:pb-5 text-sm sm:text-base">
+                                Ya, umroh mandiri sepenuhnya legal. Pemerintah Arab Saudi membuka kesempatan untuk
+                                jamaah mengurus visa umroh secara mandiri. Ebook ini juga membahas prosedur legal yang
+                                perlu kamu lengkapi.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-white rounded-xl gold-border overflow-hidden">
+                        <button class="faq-toggle w-full flex items-center justify-between p-4 sm:p-5 text-left"
+                            aria-expanded="false">
+                            <span class="font-semibold text-gray-800 pr-4 text-sm sm:text-base">Cocok untuk pemula yang
+                                belum pernah umroh?</span>
+                            <svg class="faq-icon w-4 h-4 sm:w-5 sm:h-5 text-gold-500 flex-shrink-0 transition-transform duration-300"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="faq-answer px-4 sm:px-5">
+                            <p class="text-gray-600 pb-4 sm:pb-5 text-sm sm:text-base">
+                                Tentu! Panduan ini justru dirancang untuk pemula. Setiap langkah dijelaskan secara
+                                detail dengan bahasa yang mudah dipahami, termasuk ilustrasi dan tips praktis.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-white rounded-xl gold-border overflow-hidden">
+                        <button class="faq-toggle w-full flex items-center justify-between p-4 sm:p-5 text-left"
+                            aria-expanded="false">
+                            <span class="font-semibold text-gray-800 pr-4 text-sm sm:text-base">Apakah lebih sulit dari
+                                ikut travel umroh?</span>
+                            <svg class="faq-icon w-4 h-4 sm:w-5 sm:h-5 text-gold-500 flex-shrink-0 transition-transform duration-300"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="faq-answer px-4 sm:px-5">
+                            <p class="text-gray-600 pb-4 sm:pb-5 text-sm sm:text-base">
+                                Ada tantangan tambahan, tapi dengan panduan yang tepat, semuanya bisa diatasi.
+                                Keuntungannya: kamu bebas mengatur jadwal, lebih hemat, dan pengalaman menjadi lebih
+                                personal.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-white rounded-xl gold-border overflow-hidden">
+                        <button class="faq-toggle w-full flex items-center justify-between p-4 sm:p-5 text-left"
+                            aria-expanded="false">
+                            <span class="font-semibold text-gray-800 pr-4 text-sm sm:text-base">Bagaimana jika tersesat
+                                di
+                                Mekkah atau Madinah?</span>
+                            <svg class="faq-icon w-4 h-4 sm:w-5 sm:h-5 text-gold-500 flex-shrink-0 transition-transform duration-300"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="faq-answer px-4 sm:px-5">
+                            <p class="text-gray-600 pb-4 sm:pb-5 text-sm sm:text-base">
+                                Panduan ini menyertakan peta lokasi penting, tips navigasi, dan aplikasi yang
+                                direkomendasikan untuk tracking lokasi. Ditambah tips berkomunikasi jika butuh bantuan.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-white rounded-xl gold-border overflow-hidden">
+                        <button class="faq-toggle w-full flex items-center justify-between p-4 sm:p-5 text-left"
+                            aria-expanded="false">
+                            <span class="font-semibold text-gray-800 pr-4 text-sm sm:text-base">Apakah panduan sesuai
+                                dengan sunnah?</span>
+                            <svg class="faq-icon w-4 h-4 sm:w-5 sm:h-5 text-gold-500 flex-shrink-0 transition-transform duration-300"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="faq-answer px-4 sm:px-5">
+                            <p class="text-gray-600 pb-4 sm:pb-5 text-sm sm:text-base">
+                                Ya, tata cara ibadah dalam panduan ini merujuk pada dalil-dalil shahih dan pendapat
+                                ulama terpercaya. Kami menyertakan referensi untuk setiap panduan ibadah.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item bg-white rounded-xl gold-border overflow-hidden">
+                        <button class="faq-toggle w-full flex items-center justify-between p-4 sm:p-5 text-left"
+                            aria-expanded="false">
+                            <span class="font-semibold text-gray-800 pr-4 text-sm sm:text-base">Berapa lama akses ebook
+                                ini?</span>
+                            <svg class="faq-icon w-4 h-4 sm:w-5 sm:h-5 text-gold-500 flex-shrink-0 transition-transform duration-300"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="faq-answer px-4 sm:px-5">
+                            <p class="text-gray-600 pb-4 sm:pb-5 text-sm sm:text-base">
+                                Selamanya! Setelah pembelian, ebook akan dikirim ke email kamu dan bisa diunduh kapan
+                                saja. Tidak ada batas waktu akses.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- COPYRIGHT -->
+        <footer class="w-full py-4 sm:py-6 px-4 border-t border-gray-100">
+            <p class="text-center text-gray-400 text-sm sm:text-base">
+                2026 @kelasumrohmandiri.
+            </p>
+        </footer>
+
+        <!-- RANDOM PURCHASE POPUP -->
+        <div id="purchase-popup"
+            class="fixed bottom-4 left-4 z-50 transform translate-y-10 opacity-0 transition-all duration-500 bg-emerald-600/70 backdrop-blur-md rounded-xl shadow-2xl border border-emerald-400/50 p-3 sm:p-4 w-72 sm:w-80 max-w-[calc(100vw-2rem)] pointer-events-none">
+            <div class="flex items-start gap-3">
+                <div class="flex-shrink-0 w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-md">
+                    <svg class="w-6 h-6 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                </div>
+                <div class="flex-1">
+                    <p id="popup-name" class="font-bold text-white text-sm sm:text-base leading-tight drop-shadow-sm">
+                        Ahmad - Bandung</p>
+                    <p id="popup-time" class="text-xs sm:text-sm text-emerald-100 mt-0.5">Baru saja membeli</p>
+                </div>
+            </div>
+            <div class="mt-3 bg-emerald-800/40 rounded-lg p-2 text-center border border-emerald-500/50">
+                <p class="text-[11px] sm:text-xs text-white font-medium" style="letter-spacing: 0.2px;">🔥 Mengklaim
+                    <span class="font-bold text-yellow-300">Promo Rp 99.000</span> Hari Ini!</p>
+            </div>
+        </div>
+
+    </main>
+
+    <script>
+        // Initialize variables first
+        const revealElements = document.querySelectorAll('.reveal');
+        const revealStaggerElements = document.querySelectorAll('.reveal-stagger');
+        const faqToggles = document.querySelectorAll('.faq-toggle');
+        let stockCount = 23;
+
+        // Scroll Reveal with IntersectionObserver
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        revealElements.forEach(el => revealObserver.observe(el));
+        revealStaggerElements.forEach(el => revealObserver.observe(el));
+
+        // FAQ Accordion
+        faqToggles.forEach(toggle => {
+            toggle.addEventListener('click', function () {
+                const parent = this.parentElement;
+                const answer = parent.querySelector('.faq-answer');
+                const icon = this.querySelector('.faq-icon');
+                const isOpen = answer.classList.contains('open');
+
+                document.querySelectorAll('.faq-answer').forEach(a => {
+                    a.classList.remove('open');
+                    a.style.maxHeight = null;
+                });
+                document.querySelectorAll('.faq-icon').forEach(i => {
+                    i.style.transform = 'rotate(0deg)';
+                });
+                document.querySelectorAll('.faq-toggle').forEach(t => {
+                    t.setAttribute('aria-expanded', 'false');
+                });
+
+                if (!isOpen) {
+                    answer.classList.add('open');
+                    answer.style.maxHeight = answer.scrollHeight + 'px';
+                    icon.style.transform = 'rotate(180deg)';
+                    this.setAttribute('aria-expanded', 'true');
+                }
+            });
+        });
+
+        // Stock counter animation
+        function updateStockCounter() {
+            const counter = document.getElementById('stock-counter');
+            if (counter && stockCount > 15) {
+                if (Math.random() > 0.95) {
+                    stockCount--;
+                    counter.textContent = 'Sisa Slot: ' + stockCount + ' Orang';
+                    counter.style.transition = 'transform 0.3s ease';
+                    counter.style.transform = 'scale(1.1)';
+                    setTimeout(() => {
+                        counter.style.transform = 'scale(1)';
+                    }, 300);
+                }
+            }
+        }
+
+        const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+        if (!prefersReducedMotion) {
+            setInterval(updateStockCounter, 30000);
+        }
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: prefersReducedMotion ? 'auto' : 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // ========== HERO SLIDER ==========
+        (function () {
+            const track = document.getElementById('sliderTrack');
+            const slides = track.querySelectorAll('.slide');
+            const prevBtn = document.getElementById('sliderPrev');
+            const nextBtn = document.getElementById('sliderNext');
+            const dots = document.querySelectorAll('#sliderDots .slider-dot');
+            const progress = document.getElementById('sliderProgress');
+            const totalSlides = slides.length;
+            let currentIndex = 0;
+            let autoSlideInterval;
+            const autoSlideDelay = 4000;
+
+            function goToSlide(index) {
+                if (index < 0) index = totalSlides - 1;
+                if (index >= totalSlides) index = 0;
+                currentIndex = index;
+                track.style.transform = 'translateX(-' + (currentIndex * 100) + '%)';
+                dots.forEach(d => d.classList.remove('active'));
+                dots[currentIndex].classList.add('active');
+                const pct = ((currentIndex + 1) / totalSlides) * 100;
+                progress.style.width = pct + '%';
+            }
+
+            function nextSlide() { goToSlide(currentIndex + 1); }
+            function prevSlide() { goToSlide(currentIndex - 1); }
+
+            nextBtn.addEventListener('click', function () { nextSlide(); resetAutoSlide(); });
+            prevBtn.addEventListener('click', function () { prevSlide(); resetAutoSlide(); });
+
+            dots.forEach(dot => {
+                dot.addEventListener('click', function () {
+                    goToSlide(parseInt(this.dataset.index));
+                    resetAutoSlide();
+                });
+            });
+
+            function startAutoSlide() { autoSlideInterval = setInterval(nextSlide, autoSlideDelay); }
+            function resetAutoSlide() { clearInterval(autoSlideInterval); startAutoSlide(); }
+
+            let touchStartX = 0;
+            const slider = document.getElementById('heroSlider');
+
+            slider.addEventListener('touchstart', function (e) {
+                touchStartX = e.changedTouches[0].screenX;
+            }, { passive: true });
+
+            slider.addEventListener('touchend', function (e) {
+                const diff = touchStartX - e.changedTouches[0].screenX;
+                if (Math.abs(diff) > 50) {
+                    if (diff > 0) { nextSlide(); } else { prevSlide(); }
+                    resetAutoSlide();
+                }
+            }, { passive: true });
+
+            slider.addEventListener('mouseenter', function () { clearInterval(autoSlideInterval); });
+            slider.addEventListener('mouseleave', function () { startAutoSlide(); });
+
+            slider.setAttribute('tabindex', '0');
+            slider.addEventListener('keydown', function (e) {
+                if (e.key === 'ArrowLeft') { prevSlide(); resetAutoSlide(); }
+                if (e.key === 'ArrowRight') { nextSlide(); resetAutoSlide(); }
+            });
+
+            goToSlide(0);
+            startAutoSlide();
+        })();
+
+        // ========== TESTIMONIAL SLIDER ==========
+        (function () {
+            const track = document.getElementById('testiTrack');
+            if (!track) return;
+            const slides = track.querySelectorAll('.slide');
+            const prevBtn = document.getElementById('testiPrev');
+            const nextBtn = document.getElementById('testiNext');
+            const dots = document.querySelectorAll('#testiDots .slider-dot');
+            const progress = document.getElementById('testiProgress');
+            const totalSlides = slides.length;
+            if (totalSlides === 0) return;
+            let currentIndex = 0;
+            let autoSlideInterval;
+            const autoSlideDelay = 5000;
+
+            function goToSlide(index) {
+                if (index < 0) index = totalSlides - 1;
+                if (index >= totalSlides) index = 0;
+                currentIndex = index;
+                track.style.transform = 'translateX(-' + (currentIndex * 100) + '%)';
+                dots.forEach(d => d.classList.remove('active'));
+                if (dots[currentIndex]) dots[currentIndex].classList.add('active');
+                const pct = ((currentIndex + 1) / totalSlides) * 100;
+                progress.style.width = pct + '%';
+            }
+
+            function nextSlide() { goToSlide(currentIndex + 1); }
+            function prevSlide() { goToSlide(currentIndex - 1); }
+
+            nextBtn.addEventListener('click', function () { nextSlide(); resetAutoSlide(); });
+            prevBtn.addEventListener('click', function () { prevSlide(); resetAutoSlide(); });
+
+            dots.forEach(dot => {
+                dot.addEventListener('click', function () {
+                    goToSlide(parseInt(this.dataset.index));
+                    resetAutoSlide();
+                });
+            });
+
+            function startAutoSlide() { autoSlideInterval = setInterval(nextSlide, autoSlideDelay); }
+            function resetAutoSlide() { clearInterval(autoSlideInterval); startAutoSlide(); }
+
+            let touchStartX = 0;
+            const slider = document.getElementById('testiSlider');
+
+            slider.addEventListener('touchstart', function (e) {
+                touchStartX = e.changedTouches[0].screenX;
+            }, { passive: true });
+
+            slider.addEventListener('touchend', function (e) {
+                const diff = touchStartX - e.changedTouches[0].screenX;
+                if (Math.abs(diff) > 50) {
+                    if (diff > 0) { nextSlide(); } else { prevSlide(); }
+                    resetAutoSlide();
+                }
+            }, { passive: true });
+
+            slider.addEventListener('mouseenter', function () { clearInterval(autoSlideInterval); });
+            slider.addEventListener('mouseleave', function () { startAutoSlide(); });
+
+            goToSlide(0);
+            startAutoSlide();
+        })();
+
+        // ========== RANDOM PURCHASE POPUP ==========
+        (function () {
+            const popup = document.getElementById('purchase-popup');
+            const popupName = document.getElementById('popup-name');
+            const popupTime = document.getElementById('popup-time');
+            const buyers = [
+                "Ahmad - Bandung",
+                "Siti - Surabaya",
+                "Budi - Jakarta",
+                "Rina - Bekasi",
+                "Hendra - Makassar",
+                "Fajar - Solo",
+                "Dewi - Jogja",
+                "Andi - Medan",
+                "Nur - Palembang",
+                "Rizki - Bogor"
+            ];
+
+            function showPopup() {
+                // Pick random buyer
+                const randomBuyer = buyers[Math.floor(Math.random() * buyers.length)];
+                popupName.textContent = randomBuyer;
+
+                // Pick random time
+                const randomTime = Math.floor(Math.random() * 5) + 1; // 1 to 5
+                popupTime.textContent = `${randomTime} jam yang lalu`;
+
+                // Show popup
+                popup.classList.remove('translate-y-10', 'opacity-0');
+                popup.classList.add('translate-y-0', 'opacity-100');
+
+                // Hide after 3 seconds
+                setTimeout(() => {
+                    popup.classList.add('translate-y-10', 'opacity-0');
+                    popup.classList.remove('translate-y-0', 'opacity-100');
+                }, 3000);
+            }
+
+            // Show first popup after 10 seconds, then every 13 seconds (10s delay + 3s show)
+            setTimeout(() => {
+                showPopup();
+                setInterval(showPopup, 13000);
+            }, 10000);
+        })();
+    </script>
+</body>
+
+</html>
